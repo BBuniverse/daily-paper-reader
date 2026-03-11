@@ -25,3 +25,37 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: IMG RES
+      description: 查找图像复原相关的论文
+      enabled: true
+      keywords:
+        - keyword: turbulence mitigation
+          keyword_cn: 热浪
+          query: t
+        - keyword: image restoration
+          keyword_cn: 图像复原
+          query: comprehensive techniques for image restoration
+        - keyword: super-resolution
+          keyword_cn: 超分辨率
+          query: single image super-resolution algorithms
+        - keyword: blind restoration
+          keyword_cn: 盲复原
+          query: blind image restoration with unknown kernels
+      intent_queries:
+        - query: state of the art deep learning models for image restoration
+          query_cn: 最先进的深度学习图像复原模型
+          enabled: true
+          source: manual
+          note: ''
+        - query: benchmarking datasets and metrics for image restoration
+          query_cn: 图像复原的基准数据集与评估指标
+          enabled: true
+          source: manual
+          note: ''
+        - query: real world image restoration and blind degradation modeling
+          query_cn: 真实场景图像复原与盲退化建模
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-03-11T06:25:40.580Z'
